@@ -15,12 +15,12 @@ const NFTS = []
 // NFT object using the parameters passed to it for its metadata, 
 // and store it in the variable above.
 
-function mintNFT (_name, _eyecolor, _shirtType, _bling) {
+function mintNFT (_name, _eyecolor, _personality, _zodiac) {
 const NFT = {
     "name": _name,
     "eyecolor": _eyecolor,
-    "shirtType": _shirtType,
-    "bling": _bling
+    "shirtType": _personality,
+    "bling": _zodiac 
 
 }
 NFTS.push(NFT)
@@ -34,8 +34,8 @@ for(let i = 0; i < NFTS.length; i++) {
     console.log ("\nID: \t\t" +  (i + 1));
     console.log ("\nName: \t\t " + NFTS[i].name);
     console.log ("Eye Color: \t" + NFTS[i].eyecolor);
-    console.log ("Shirt Type: " + NFTS[i].shirtType);
-    console.log ("Jewelry: \t\t " + NFTS[i].bling);
+    console.log ("Personality: " + NFTS[i].personality);
+    console.log ("Zodiac: \t\t " + NFTS[i].zodiac);
 }
 }
 
@@ -45,10 +45,10 @@ console.log("\n" + NFTS.length);
 }
 
 // call your functions below this line
-mintNFT("Thirdy", "Black", "Sweater", "Silver Pendant")
-mintNFT("Ulric", "Brown", "Flannel", "Silver Chain")
-mintNFT("Keith", "Red", "Cardigan", "Silver Chain")
-mintNFT("Ysabel", "White", "Sweater", "Silver Pendant")
-mintNFT("Maverick", "Blue", "Long Sleeve", "Silver Pendant")
+mintNFT("Adam", "Purple", "INFP", "Scorpio")
+mintNFT("Thirdy", "Brown", "INFJ", "Scorpio")
+mintNFT("Simon", "Brown", "INTJ", "Aquarius")
+mintNFT("Keith", "White", "INFP", "Aries")
+mintNFT("Elysha", "Pink", "ISFP", "Leo")
 listNFTs();
 getTotalSupply();
