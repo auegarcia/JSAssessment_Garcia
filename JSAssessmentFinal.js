@@ -19,8 +19,8 @@ function mintNFT (_name, _eyecolor, _personality, _zodiac) {
 const NFT = {
     "name": _name,
     "eyecolor": _eyecolor,
-    "shirtType": _personality,
-    "bling": _zodiac 
+    "personality": _personality,
+    "zodiac": _zodiac 
 
 }
 NFTS.push(NFT)
